@@ -1,0 +1,28 @@
+<p>
+  <b>Timestamp:</b>
+  <%=h @session.timestamp %>
+</p>
+
+<p>
+  <b>Five min:</b>
+  <%=h @session.five_min %>
+</p>
+
+<p>
+  <b>Ten min:</b>
+  <%=h @session.ten_min %>
+</p>
+
+<p>
+  <b>Fifteen min:</b>
+  <%=h @session.fifteen_min %>
+</p>
+
+<p>
+  <b>Node:</b>
+  <%=h @session.node_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_session_path(@session) %> |
+<%= link_to 'Back', sessions_path %>

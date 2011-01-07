@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  timestamp: 1
+  five_min: 1
+  ten_min: 1
+  fifteen_min: 1
+  node_id: 1
+
+two:
+  timestamp: 1
+  five_min: 1
+  ten_min: 1
+  fifteen_min: 1
+  node_id: 1

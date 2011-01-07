@@ -1,0 +1,28 @@
+<h1>Listing sessions</h1>
+
+<table>
+  <tr>
+    <th>Timestamp</th>
+    <th>Five min</th>
+    <th>Ten min</th>
+    <th>Fifteen min</th>
+    <th>Node</th>
+  </tr>
+
+<% @sessions.each do |session| %>
+  <tr>
+    <td><%=h session.timestamp %></td>
+    <td><%=h session.five_min %></td>
+    <td><%=h session.ten_min %></td>
+    <td><%=h session.fifteen_min %></td>
+    <td><%=h session.node_id %></td>
+    <td><%= link_to 'Show', session %></td>
+    <td><%= link_to 'Edit', edit_session_path(session) %></td>
+    <td><%= link_to 'Destroy', session, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New session', new_session_path %>
