@@ -1,0 +1,118 @@
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:19:49) [GET]
+Rendering pages/monthly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#weekly (for 0.0.0.0 at 2011-01-10 15:19:49) [GET]
+Rendering pages/weekly
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/weekly]
+
+
+Processing PagesController#daily (for 0.0.0.0 at 2011-01-10 15:19:49) [GET]
+Rendering pages/daily
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/daily]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:23:10) [GET]
+Rendering pages/monthly
+Completed in 20ms (View: 19, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:23:10) [GET]
+Rendering pages/monthly
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#weekly (for 0.0.0.0 at 2011-01-10 15:23:10) [GET]
+Rendering pages/weekly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/weekly]
+
+
+Processing PagesController#daily (for 0.0.0.0 at 2011-01-10 15:23:10) [GET]
+Rendering pages/daily
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/daily]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:23:31) [GET]
+Rendering pages/monthly
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:23:31) [GET]
+Rendering pages/monthly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#weekly (for 0.0.0.0 at 2011-01-10 15:23:31) [GET]
+Rendering pages/weekly
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/weekly]
+
+
+Processing PagesController#daily (for 0.0.0.0 at 2011-01-10 15:23:31) [GET]
+Rendering pages/daily
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/daily]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:25:15) [GET]
+Rendering pages/monthly
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:25:15) [GET]
+Rendering pages/monthly
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:25:15) [GET]
+Rendering pages/monthly
+Completed in 0ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#weekly (for 0.0.0.0 at 2011-01-10 15:25:15) [GET]
+Rendering pages/weekly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/weekly]
+
+
+Processing PagesController#daily (for 0.0.0.0 at 2011-01-10 15:25:15) [GET]
+Rendering pages/daily
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/daily]
+
+
+Processing PagesController#yearly (for 0.0.0.0 at 2011-01-10 15:26:25) [GET]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:26:25) [GET]
+Rendering pages/monthly
+Completed in 1ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#weekly (for 0.0.0.0 at 2011-01-10 15:26:25) [GET]
+Rendering pages/weekly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/weekly]
+
+
+Processing PagesController#daily (for 0.0.0.0 at 2011-01-10 15:26:25) [GET]
+Rendering pages/daily
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/daily]
+
+
+Processing PagesController#yearly (for 0.0.0.0 at 2011-01-10 15:34:20) [GET]
+Rendering pages/yearly
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://test.host/pages/yearly]
+
+
+Processing PagesController#monthly (for 0.0.0.0 at 2011-01-10 15:34:20) [GET]
+Rendering pages/monthly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/monthly]
+
+
+Processing PagesController#weekly (for 0.0.0.0 at 2011-01-10 15:34:20) [GET]
+Rendering pages/weekly
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/weekly]
+
+
+Processing PagesController#daily (for 0.0.0.0 at 2011-01-10 15:34:20) [GET]
+Rendering pages/daily
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/pages/daily]

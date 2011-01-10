@@ -7,5 +7,8 @@ class PagesController < ApplicationController
 
   def monthly
   end
+  
+  def yearly
+  end
 
 end
