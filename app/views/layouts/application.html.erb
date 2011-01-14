@@ -3,25 +3,17 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <title><%= title %></title>
-    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
-    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
-    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+    <%= render 'layouts/stylesheets' %>
   </head>
   <body>
     <div class="container">
       <div id="header">
-        <%= image_tag("graph.jpeg", :alt => "WebCT Monitor", :class => "round") %>
-        <ul class="navigation round">
-          <li><%= link_to "Daily", '#' %></li>
-          <li><%= link_to "Weekly", '#' %></li>
-          <li><%= link_to "Monthly", '#' %></li>
-          <li><%= link_to "Yearly", '#' %></li>
-        </ul>
+		<%= render 'layouts/header' %>
       </div>
       <div id="content" class="round">
         <%= yield %>
       </div>
+	  <%= render 'layouts/footer' %>
     </div>
   </body>
 </html>
