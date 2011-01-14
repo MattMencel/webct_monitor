@@ -8,11 +8,14 @@ class PagesController < ApplicationController
   end
 
   def monthly
-        @title = "Monthly"
+    @title = "Monthly"
   end
   
   def yearly
-        @title = "Yearly"
+    @title = "Yearly"
   end
 
+  def help
+    @title = "Help"
+  end
 end
