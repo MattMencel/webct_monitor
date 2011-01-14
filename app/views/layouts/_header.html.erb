@@ -1,9 +1,11 @@
 <div id="header" class="round">
-  <%= image_tag("graph.jpeg", :alt => "Sample App", :class => "round") %>
+  <% logo = image_tag("graph.jpeg", :alt = > "WebCT Monitor", :class => "round") %>
+  <%= link_to logo, root_path %>
   <ul class="navigation round">
-    <li><%= link_to "Daily", '#' %></li>
-    <li><%= link_to "Weekly", '#' %></li>
-    <li><%= link_to "Monthly", '#' %></li>
-    <li><%= link_to "Yearly", '#' %></li>
+    <li><%= link_to "Daily", 'daily_path' %></li>
+    <li><%= link_to "Weekly", 'weekly_path' %></li>
+    <li><%= link_to "Monthly", 'monthly_path' %></li>
+    <li><%= link_to "Yearly", 'yearly_path' %></li>
+    <li><%= link_to "Help", 'help_path' %></li>
   </ul>
 </div>
