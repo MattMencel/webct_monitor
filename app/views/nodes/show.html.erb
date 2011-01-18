@@ -5,9 +5,13 @@
 
 <p>
   <b>Url:</b>
-  <%=h @node.url %>
+  <%=h @node.hostname %>
 </p>
 
+<p>
+  <b>Url:</b>
+  <%=h @node.logpath %>
+</p>
 
 <%= link_to 'Edit', edit_node_path(@node) %> |
 <%= link_to 'Back', nodes_path %>

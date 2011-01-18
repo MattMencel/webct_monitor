@@ -3,13 +3,15 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Url</th>
+    <th>Hostname</th>
+    <th>Logpath</th>
   </tr>
 
 <% @nodes.each do |node| %>
   <tr>
     <td><%=h node.name %></td>
-    <td><%=h node.url %></td>
+    <td><%=h node.hostname %></td>
+    <td><%=h node.logpath %></td>
     <td><%= link_to 'Show', node %></td>
     <td><%= link_to 'Edit', edit_node_path(node) %></td>
     <td><%= link_to 'Destroy', node, :confirm => 'Are you sure?', :method => :delete %></td>
