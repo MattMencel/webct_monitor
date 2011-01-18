@@ -2,7 +2,8 @@ class CreateNodes < ActiveRecord::Migration
   def self.up
     create_table :nodes do |t|
       t.string :name
-      t.string :url
+      t.string :hostname
+      t.string :logpath
 
       t.timestamps
     end
