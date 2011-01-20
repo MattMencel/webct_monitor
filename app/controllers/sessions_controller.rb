@@ -84,6 +84,7 @@ class SessionsController < ApplicationController
   def refresh
     @refresh = Session.refresh
     flash[:notice] = "Refreshing Logs"
+    redirect_to daily_path
   end
     
 end
