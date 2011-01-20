@@ -4,7 +4,13 @@ class Session < ActiveRecord::Base
   
   def self.refresh
     puts "refreshing"
-    return true
+
+    gateway = Net::SSH::Gateway.new( 'uxb', )
+    @nodes = Nodes.find(:all)
+    
+    @nodes.each do |node|
+      
+    end
     
   end
   

@@ -4,6 +4,8 @@ class CreateNodes < ActiveRecord::Migration
       t.string :name
       t.string :hostname
       t.string :logpath
+      t.string :type
+      t.string :ssh_user
 
       t.timestamps
     end

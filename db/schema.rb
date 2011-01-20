@@ -15,6 +15,8 @@ ActiveRecord::Schema.define(:version => 20110107222625) do
     t.string   "name"
     t.string   "hostname"
     t.string   "logpath"
+    t.string   "type"
+    t.string   "ssh_user"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
