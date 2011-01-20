@@ -9,8 +9,18 @@
 </p>
 
 <p>
-  <b>Url:</b>
+  <b>Logpath:</b>
   <%=h @node.logpath %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%=h @node.type %>
+</p>
+
+<p>
+  <b>SSH User:</b>
+  <%=h @node.ssh_user %>
 </p>
 
 <%= link_to 'Edit', edit_node_path(@node) %> |

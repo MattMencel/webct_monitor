@@ -16,6 +16,14 @@
     <%= f.text_field :logpath %>
   </p>
   <p>
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </p>
+  <p>
+    <%= f.label :ssh_user %><br />
+    <%= f.text_field :ssh_user %>
+  </p>
+  <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>

@@ -5,6 +5,8 @@
     <th>Name</th>
     <th>Hostname</th>
     <th>Logpath</th>
+    <th>Type</th>
+    <th>SSH User</th>
   </tr>
 
 <% @nodes.each do |node| %>
@@ -12,6 +14,8 @@
     <td><%=h node.name %></td>
     <td><%=h node.hostname %></td>
     <td><%=h node.logpath %></td>
+    <td><%=h node.type %></td>
+    <td><%=h node.ssh_user %></td>
     <td><%= link_to 'Show', node %></td>
     <td><%= link_to 'Edit', edit_node_path(node) %></td>
     <td><%= link_to 'Destroy', node, :confirm => 'Are you sure?', :method => :delete %></td>
