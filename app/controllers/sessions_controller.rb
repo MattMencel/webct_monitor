@@ -80,4 +80,10 @@ class SessionsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def refresh
+    @refresh = Session.refresh
+    flash[:notice] = "Refreshing Logs"
+  end
+    
 end

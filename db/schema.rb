@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20110107222625) do
   end
 
   create_table "sessions", :force => true do |t|
-    t.datetime "timestamp"
+    t.integer  "timestamp"
     t.integer  "five_min"
     t.integer  "ten_min"
     t.integer  "fifteen_min"

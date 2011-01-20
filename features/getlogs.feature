@@ -10,7 +10,6 @@ Feature: Get Logs
 		
 	Scenario:  Click Refresh Data
 	    Given I am on the daily page
-		And I see the "Refresh Data" button
 		When I press the "Refresh Data" button
 		Then the system should refresh logs
 		And I should see "Refreshing Logs"
