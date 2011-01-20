@@ -1,6 +1,6 @@
 When /^the logs are more than (\d+) hour old$/ do |hours|
   @latest_session = Session.find(:last)
-  puts @latest_session.inspect
+  puts @latest_session
 end
 
 Then /^I should see the "([^"]*)" button$/ do |arg1|
