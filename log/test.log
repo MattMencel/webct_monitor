@@ -1545,3 +1545,510 @@ Rendered layouts/_stylesheets (0.5ms)
 Rendered layouts/_header (0.5ms)
 Rendered layouts/_footer (0.1ms)
 Completed in 3ms (View: 3, DB: 0) | 200 OK [http://test.host/daily]
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateSessions (20110107222521)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "timestamp" datetime, "five_min" integer, "ten_min" integer, "fifteen_min" integer, "node_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110107222521')[0m
+Migrating to CreateNodes (20110107222625)
+  [4;35;1mSQL (0.3ms)[0m   [0mCREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hostname" varchar(255), "logpath" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20110107222625')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("nodes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateSessions (20110107222521)
+Migrating to CreateNodes (20110107222625)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPRAGMA index_list("nodes")[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("sessions")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hostname" varchar(255), "logpath" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (14.8ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "timestamp" datetime, "five_min" integer, "ten_min" integer, "fifteen_min" integer, "node_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20110107222625')[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110107222521')[0m
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:09:30) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 9ms (View: 8, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:10:30) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:11:42) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:13:08) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:14:07) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:14:41) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:16:12) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:17:23) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-18 16:18:09) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 13:23:26) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:02:28) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:03:10) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:03:24) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:03:55) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:12:07) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:12:46) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:12:46) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:22:48) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 6ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:22:48) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:24:01) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:24:01) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:40:24) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:40:24) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:42:48) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:42:49) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:43:27) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:43:27) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:43:46) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:43:46) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:44:23) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.8ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:44:23) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:44:47) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:44:47) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.4ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:46:10) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+  [4;36;1mSession Load (19.3ms)[0m   [0;1mSELECT * FROM "sessions" ORDER BY sessions.id DESC LIMIT 1[0m
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 14:46:10) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 19) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 16:17:20) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (14.1ms)
+Rendered layouts/_header (0.9ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 19ms (View: 18, DB: 0) | 200 OK [http://www.example.com/daily]
+  [4;36;1mSession Load (0.2ms)[0m   [0;1mSELECT * FROM "sessions" ORDER BY sessions.id DESC LIMIT 1[0m
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 16:17:20) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 16:19:51) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 5ms (View: 4, DB: 0) | 200 OK [http://www.example.com/daily]
+  [4;36;1mSession Load (0.2ms)[0m   [0;1mSELECT * FROM "sessions" ORDER BY sessions.id DESC LIMIT 1[0m
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-19 16:19:51) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hostname" varchar(255), "logpath" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "timestamp" datetime, "five_min" integer, "ten_min" integer, "fifteen_min" integer, "node_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.4ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.1ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20110107222625')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110107222521')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.2ms)[0m   [0;1mCREATE TABLE "nodes" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "hostname" varchar(255), "logpath" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (15.1ms)[0m   [0;1mCREATE TABLE "sessions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "timestamp" datetime, "five_min" integer, "ten_min" integer, "fifteen_min" integer, "node_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.1ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (4.5ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20110107222625')[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mINSERT INTO "schema_migrations" (version) VALUES ('20110107222521')[0m
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-20 09:19:35) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.7ms)
+Rendered layouts/_header (0.8ms)
+Rendered layouts/_footer (0.5ms)
+Completed in 17ms (View: 16, DB: 0) | 200 OK [http://www.example.com/daily]
+  [4;36;1mSession Load (0.2ms)[0m   [0;1mSELECT * FROM "sessions" ORDER BY sessions.id DESC LIMIT 1[0m
+
+
+Processing PagesController#daily (for 127.0.0.1 at 2011-01-20 09:19:35) [GET]
+Rendering template within layouts/application
+Rendering pages/daily
+Rendered layouts/_stylesheets (0.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.2ms)
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://www.example.com/daily]
