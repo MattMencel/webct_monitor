@@ -1,7 +1,7 @@
 class CreateSessions < ActiveRecord::Migration
   def self.up
     create_table :sessions do |t|
-      t.float :timestamp
+      t.timestamp :timestamp
       t.integer :five_min
       t.integer :ten_min
       t.integer :fifteen_min
